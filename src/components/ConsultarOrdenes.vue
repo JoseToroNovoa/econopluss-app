@@ -42,7 +42,7 @@ export default {
     },
     beforeCreate: function() {
         axios
-      .get("https://ekonoapp01.herokuapp.com/consultar")
+      .get("https://econoplussapi09.herokuapp.com/registros/consultar/")
       .then(respuesta => {
         this.registros = respuesta.data;
       })
