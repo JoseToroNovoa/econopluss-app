@@ -46,7 +46,7 @@ export default{
         nota: this.nota
       };
       axios
-        .post("https://ekonoapp01.herokuapp.com/crear", datosJSON)
+        .post("https://econoplussapi09.herokuapp.com/registros/crear/", datosJSON)
         .then(respuesta => {
           alert(respuesta.data.mensaje);
         })
