@@ -42,7 +42,7 @@ export default {
     },
     beforeCreate: function() {
         axios
-      .get("http://127.0.0.1:8000/registros/consultar/")
+      .get("https://ekonoapp01.herokuapp.com/consultar")
       .then(respuesta => {
         this.registros = respuesta.data;
       })
